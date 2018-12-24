@@ -3,7 +3,7 @@
 $host="localhost";
 $user = "root";
 $pass = "develop93";
-$dbname = "bdwarga";
+$dbname = "dbwarga";
 $link = mysqli_connect($host,$user,$pass,$dbname);
 
 // if($link){
