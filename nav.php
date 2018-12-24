@@ -4,12 +4,6 @@ switch ($_GET['page']){
 	/**
 	 * data warga crud
 	 */
-	case 'add':
-		if ($_GET['page']){
-			include 'inc/warga/datawarga/add.php';
-			$content = $add;
-		}
-        break;
     case 'delete':
 		if ($_GET['page']){
 			include 'inc/warga/datawarga/delete.php';
@@ -26,7 +20,7 @@ switch ($_GET['page']){
 	case 'homewarga':
 		if ($_GET['page']){
 			include 'inc/warga/datawarga/home.php';
-			$content = $home;
+			$content = $homewarga;
 		}
 		break;
     
