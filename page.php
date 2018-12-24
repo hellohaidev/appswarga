@@ -1,6 +1,6 @@
 <?php 
 session_start();
-// error_reporting('E_ALL^E_NOTICE');
+error_reporting('E_ALL^E_NOTICE');
 
 if(empty($_SESSION)){
     header('location:index.php');
@@ -34,7 +34,7 @@ else {
 
 <nav class="navbar navbar-expand-md bg-dark navbar-dark">
     <!-- Brand -->
-    <a class="navbar-brand" href="#">WargaApps</a>
+    <a class="navbar-brand" href="?page=home">WargaApps</a>
 
     <!-- Toggler/collapsibe Button -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
