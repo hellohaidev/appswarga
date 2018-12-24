@@ -65,7 +65,7 @@ if(isset($_POST['login'])){
                 <div id="login-column" class="col-md-6">
                     <div id="login-box" class="col-md-12">
                         <form id="login-form" class="form"  method="post">
-                            <h3 class="text-center bounce" style="color:#33cc34;">Login</h3>    
+                            <h3 class="text-center bounce" style="color:#33cc34;">SUGI APPS</h3>    
                             <div class="form-group">
                                 <input type="text" name="username" id="username" class="form-control" placeholder="username" required> 
                             </div>
