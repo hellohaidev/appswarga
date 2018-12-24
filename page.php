@@ -59,7 +59,7 @@ if(isset($_POST['save'])){
 
 <nav class="navbar navbar-expand-md bg-dark navbar-dark">
     <!-- Brand -->
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="#">WargaApps</a>
 
     <!-- Toggler/collapsibe Button -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -75,7 +75,7 @@ if(isset($_POST['save'])){
       </a>
       <div class="dropdown-menu">
         <a class="dropdown-item" href="#">Data RT</a>
-        <a class="dropdown-item" href="#">Data Warga</a>
+        <a class="dropdown-item" href="?page=homewarga">Data Warga</a>
         <a class="dropdown-item" href="#">Data KK</a>
       </div>
     </li>
