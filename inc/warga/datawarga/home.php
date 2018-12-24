@@ -76,7 +76,7 @@ if(isset($_POST['save'])){
                     <td><?php echo $row['wafat']; ?></td>
                     
                     <td>
-                        <a href="#" class="btn btn-info">Edit</a> || <a href="#" class="btn btn-danger">Delete</a>
+                        <a href="#" class="btn btn-info">Edit</a> || <a href="?page=delete&id=<?php echo $row['id_warga'] ?>" class="btn btn-danger">Delete</a>
                     </td>
                     
                 </tr>
