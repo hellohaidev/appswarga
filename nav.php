@@ -2,6 +2,19 @@
 switch ($_GET['page']){
 
 	/**
+	 * Main Page
+	 * 
+	 */
+
+	case 'home':
+	if ($_GET['page']){
+		include 'inc/home.php';
+		$content = $home;
+	}
+	break;
+
+
+	/**
 	 * data warga crud
 	 */
     case 'delete':
