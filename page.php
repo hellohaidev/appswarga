@@ -1,6 +1,6 @@
 <?php 
 session_start();
-error_reporting('E_ALL^E_NOTICE');
+// error_reporting('E_ALL^E_NOTICE');
 
 if(empty($_SESSION)){
     header('location:index.php');
@@ -13,32 +13,7 @@ else {
     include 'lib/db.php';
     include 'nav.php';
     
-if(isset($_POST['save'])){
-    $member = $_POST['member'];
-    $client = $_POST['client'];
-    $disbursed = $_POST['disbursed'];
-    $repaid = $_POST['repaid'];
-    $out = $_POST['outstanding'];
-    $saving = $_POST['saving'];
-    $par = $_POST['par'];
-    $branch = $_POST['branch'];
-    $staff = $_POST['staff'];
-    $male = $_POST['male'];
-    $female = $_POST['female'];
-    $child = $_POST['childs'];
-    $tahun = date('Y');
-    
 
-    $query = "insert into tm_progress (member,client,disbursed,repaid,outstanding,saving,par,branch,staff,male,female,childs,tahun) 
-            values('$member','$client','$disbursed','$repaid','$out','$saving','$par','$branch','$staff','$male','$female','$child','$tahun')";
-    $result = mysqli_query($link,$query);
-    if($result){
-        echo '<script>alert("sukses");window.location.assign("http://localhost/komida/pie/crud/")</script>';
-    }
-    else {
-        echo '<script>alert("gagal");window.location.assign("http://localhost/komida/pie/crud/")</script>';
-    }
-}
 ?>
 
 <!DOCTYPE html>
