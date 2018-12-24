@@ -1,6 +1,6 @@
 <?php 
 session_start();
-include '../lib/db.php';
+include 'lib/db.php';
 if($_SESSION){
     header('location:page.php');
 }
@@ -28,8 +28,8 @@ if(isset($_POST['login'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
     <style>
         body {
         margin: 0;
@@ -61,7 +61,7 @@ if(isset($_POST['login'])){
 <div id="login">
         
         <div class="container">
-            <div id="login-row" class="row justify-content-center align-items-center animated infinite jello">
+            <div id="login-row" class="row justify-content-center align-items-center animated  jello">
                 <div id="login-column" class="col-md-6">
                     <div id="login-box" class="col-md-12">
                         <form id="login-form" class="form"  method="post">
@@ -85,8 +85,8 @@ if(isset($_POST['login'])){
         </div>
     </div>
 
-    <script src="../assets/js/jquery.js"></script>
-    <script src="../assets/js/bootstrap.min.js"></script>
-    <script src="../assets/js/popper.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/popper.js"></script>
 </body>
 </html>

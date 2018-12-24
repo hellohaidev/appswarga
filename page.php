@@ -10,8 +10,8 @@ elseif(isset($_POST['logout'])){
     header('location:index.php');
 }
 else {
-    include '../lib/db.php';
-    include './nav.php';
+    include 'lib/db.php';
+    include 'nav.php';
     
 if(isset($_POST['save'])){
     $member = $_POST['member'];
@@ -48,98 +48,61 @@ if(isset($_POST['save'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Papan Informasi Elektronik</title>
-    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/dataTable.css"/>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/dataTable.css"/>
     <!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css"/> -->
-    <link rel="stylesheet" type="text/css" href="../assets/style.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/style.css"/>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet"> 
     
 </head>
 <body>
-<div class="container-fluid">
 
-    <div class="text-center">
-        <a href="http://localhost/komida/pie/crud/">
-            <img src="../assets/img/logo.png"> <br>
-            <form method="post">
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <!-- Brand -->
+    <a class="navbar-brand" href="#">Navbar</a>
+
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Warga
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Data RT</a>
+        <a class="dropdown-item" href="#">Data Warga</a>
+        <a class="dropdown-item" href="#">Data KK</a>
+      </div>
+    </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      
+    </ul>
+    <form method="post">
                 <button type="submit" name="logout" class="btn btn-danger">Logout</button>
-            </form>
-        </a>
-    </div>
+    </form>
+  </div> 
+</nav>
 
-    <div class="container-fluid">
-            <?php echo $content; ?>
-    </div>
-
-
-    <div class="modal" id="myModal">
-        <div class="modal-dialog">
-            <div class="modal-content">
-
-            <!-- Modal Header -->
-            <div class="modal-header">
-                <h4 class="modal-title">Form Target December <?php echo date('Y') ?></h4>
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-            </div>
-
-            <!-- Modal body -->
-            <div class="modal-body">
-            <form class="form-horizontal" method="post">
-                <div class="form-group">
-                    <input type="text" class="form-control" name="member" placeholder="Isi Member"/>
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" name="client" placeholder="Isi Client"/>
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" name="disbursed" placeholder="Isi Disbursed"/>
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" name="repaid" placeholder="Isi Repaid"/>
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" name="outstanding" placeholder="Isi Outstanding"/>
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" name="saving" placeholder="Isi Saving"/>
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" name="par" placeholder="Isi Par"/>
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" name="branch" placeholder="Isi Branch"/>
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" name="staff" placeholder="Isi Staff"/>
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" name="male" placeholder="Isi Male"/>
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" name="female" placeholder="Isi Female"/>
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" name="childs" placeholder="Isi Child"/>
-                </div>
-                
-                <div class="form-group">
-                    <input type="submit" name="save" class="btn btn-primary" value="Simpan"/>
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>    
-                </div>
-             </form>  
-            </div>
-            </div>
-        </div>
+<div class="container">    
+    
+    <div style="margin-top:20px;">
+        <?php echo $content; ?>
     </div>
 
 
-
-    <script src="../assets/js/jquery.js"></script>
-    <script src="../assets/js/bootstrap.min.js"></script>
-    <script src="../assets/js/jquerydataTable.js"></script>
-    <script src="../assets/js/popper.js"></script>
-    <!-- <script src="../assets/js/dataTable.js"></script> -->
-    <script src="../assets/js/dataTable.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquerydataTable.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <!-- <script src="assets/js/dataTable.js"></script> -->
+    <script src="assets/js/dataTable.js"></script>
     <script>
         $(document).ready(function() {
             $('#data').DataTable({
