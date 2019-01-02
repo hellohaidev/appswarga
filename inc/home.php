@@ -9,6 +9,14 @@ $ds = mysqli_fetch_array($statistikWarga);
 
 <div class="row">
 
+
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header bg-info text-white">Statistik RT</div>
+            <div class="card-body">0</div>
+        </div>
+    </div>
+
     <div class="col-md-4">
         <div class="card">
             <div class="card-header bg-primary text-white">Statistik Warga</div>
@@ -18,15 +26,8 @@ $ds = mysqli_fetch_array($statistikWarga);
 
     <div class="col-md-4">
         <div class="card">
-            <div class="card-header">Header</div>
-            <div class="card-body">Basic card</div>
-        </div>
-    </div>
-    
-    <div class="col-md-4">
-        <div class="card">
-            <div class="card-header">Header</div>
-            <div class="card-body">Basic card</div>
+            <div class="card-header bg-warning text-white">Statistik KK</div>
+            <div class="card-body">0</div>
         </div>
     </div>
 
