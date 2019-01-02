@@ -22,7 +22,7 @@ else {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Papan Informasi Elektronik</title>
+    <title>Warga Apps</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/dataTable.css"/>
     <!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css"/> -->
@@ -34,7 +34,7 @@ else {
 
 <nav class="navbar navbar-expand-md bg-dark navbar-dark">
     <!-- Brand -->
-    <a class="navbar-brand" href="?page=home">WargaApps</a>
+    <a class="navbar-brand" href="?page=home">SugiApps</a>
 
     <!-- Toggler/collapsibe Button -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -49,9 +49,13 @@ else {
         Warga
       </a>
       <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">Data RT</a>
+        <a class="dropdown-item" href="?page=homert">Data RT</a>
         <a class="dropdown-item" href="?page=homewarga">Data Warga</a>
-        <a class="dropdown-item" href="#">Data KK</a>
+        <a class="dropdown-item" href="?page=homekk">Data KK</a>
+        <a class="dropdown-item" href="?page=homekktetap">Data KK Tetap</a>
+        <a class="dropdown-item" href="?page=homekkluar">Data KK Tinggal di Luar</a>
+        <a class="dropdown-item" href="?page=homekkkontrak">Data KK Kontrak</a>
+        <a class="dropdown-item" href="?page=homepindah">Data Warga Pindah</a>
       </div>
     </li>
       <li class="nav-item">
