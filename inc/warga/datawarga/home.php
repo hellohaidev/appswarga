@@ -45,7 +45,7 @@ if(isset($_POST['save'])){
                     <th style="vertical-align:top;" rowspan="2">NIK</th>
                     <th style="vertical-align:top;" rowspan="2">Tempat dan Tanggal Lahir</th>
                     <th style="vertical-align:top;" rowspan="2">Pekerjaan</th>
-                    <th style="vertical-align:top;" rowspan="2">Hubugan Keluarga`</th>
+                    <th style="vertical-align:top;" rowspan="2">Hubugan Keluarga</th>
                     <th class="text-center" colspan="3">Keterangan</th>
                     <th style="vertical-align:top;" rowspan="2">Actions</th>
                 </tr>
@@ -76,7 +76,7 @@ if(isset($_POST['save'])){
                     <td><?php echo $row['wafat']; ?></td>
                     
                     <td>
-                        <a href="#" class="btn btn-info">Edit</a> || <a href="?page=delete&id=<?php echo $row['id_warga'] ?>" class="btn btn-danger">Delete</a>
+                        <a href="?page=edit&id=<?php echo $row['id_warga'] ?>" class="btn btn-info">Edit</a> || <a href="?page=delete&id=<?php echo $row['id_warga'] ?>" class="btn btn-danger">Delete</a>
                     </td>
                     
                 </tr>
